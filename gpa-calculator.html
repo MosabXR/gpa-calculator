@@ -12,6 +12,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            transition: all 0.5s ease;
         }
 
         body {
@@ -91,13 +92,27 @@
             main h5 {
                 font-size: 0.63em;
             }
+
+            
+        }
+
+        @media screen and (max-width:428px){
+            main h1 {
+                font-size: 1.2em;
+            }
+
+            main h5 {
+                font-size: 0.56em;
+            }
+
+            
         }
     </style>
 </head>
 <body dir="rtl">
     <main>
         <h1>حساب المعدل التراكمي</h1>
-        <h5>لحساب المعدل التراكمي يجب ادخال قيمه النقاط و عدد الساعات</h5>
+        <h5>لحساب المعدل التراكمي يجب اختيار التقدير و اختيار عدد الساعات</h5>
 
         <select id="semester">
             <option value="">اختيار الفصل الدراسي</option>
@@ -113,37 +128,103 @@
 
         <input type="text" id="old-gpa" placeholder="المعدل التراكمي السابق">
 
-        <input type="text" id="sub1" placeholder="المادة الأولي">
+        <select id="sub1">
+            <option value="">المادة الأولي</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours1">
             <option value="3">3</option>
             <option value="2">2</option>
         </select>
 
-        <input type="text" id="sub2" placeholder="المادة الثانية">
+        <select id="sub2">
+            <option value="">المادة الثانية</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours2">
             <option value="3">3</option>
             <option value="2">2</option>
         </select>
 
-        <input type="text" id="sub3" placeholder="المادة الثالثة">
+        <select id="sub3">
+            <option value="">المادة الثالثة</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours3">
             <option value="3">3</option>
             <option value="2">2</option>
         </select>
 
-        <input type="text" id="sub4" placeholder="المادة الرابعة">
+        <select id="sub4">
+            <option value="">المادة الرابعة</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours4">
             <option value="3">3</option>
             <option value="2">2</option>
         </select>
 
-        <input type="text" id="sub5" placeholder="المادة الخامسة">
+        <select id="sub5">
+            <option value="">المادة الخامسة</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours5">
             <option value="3">3</option>
             <option value="2">2</option>
         </select>
 
-        <input type="text" id="sub6" placeholder="المادة السادسة">
+        <select id="sub6">
+            <option value="">المادة السادسة</option>
+            <option value="3">A+</option>
+            <option value="2">A</option>
+            <option value="3">B+</option>
+            <option value="2">B</option>
+            <option value="3">C+</option>
+            <option value="2">C</option>
+            <option value="3">D+</option>
+            <option value="2">D</option>
+            <option value="3">F</option>
+        </select>
         <select id="hours6">
             <option value="3">3</option>
             <option value="2">2</option>
@@ -153,9 +234,9 @@
         <p id="new-gpa">
             المعدل التراكمي الحالي:
             <br>
-            أعلي تقدير قد تصل له: 
+            أعلي معدل قد تصل له: 
             <br>
-            أقل تقدير قد تصل له: 
+            أقل معدل قد تصل له: 
         </p>
         <br>
         <p>@ مصعب القليوبي</p>
