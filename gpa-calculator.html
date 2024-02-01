@@ -157,18 +157,43 @@
             <br>
             أقل تقدير قد تصل له: 
         </p>
-    <main>
-    
+        <br>
+        <p>@ مصعب القليوبي</p>
+    </main>
 
     <script>
 
+        function evaluate(myvalue){
+                    if(myvalue=='A+'){
+                        return 4;
+                    } else if(myvalue=='A'){
+                        return 3.7;
+                    } else if(myvalue=='B+'){
+                        return 3.3;
+                    } else if(myvalue=='B'){
+                        return 3;
+                    } else if(myvalue=='C+'){
+                        return 2.7;
+                    } else if(myvalue=='C'){
+                        return 2.4;
+                    } else if(myvalue=='D+'){
+                        return 2.2;
+                    } else if(myvalue=='D'){
+                        return 2;
+                    } else if(myvalue=='F'||myvalue=='Fr'||myvalue=='Z') {
+                        return 0;
+                    } else {
+                        return myvalue;
+                    }
+                }
+
         function calc() {
-            var sub1 = parseFloat(document.getElementById('sub1').value);
-            var sub2 = parseFloat(document.getElementById('sub2').value);
-            var sub3 = parseFloat(document.getElementById('sub3').value);
-            var sub4 = parseFloat(document.getElementById('sub4').value);
-            var sub5 = parseFloat(document.getElementById('sub5').value);
-            var sub6 = parseFloat(document.getElementById('sub6').value);
+            var sub1 = evaluate(document.getElementById('sub1').value);
+            var sub2 = evaluate(document.getElementById('sub2').value);
+            var sub3 = evaluate(document.getElementById('sub3').value);
+            var sub4 = evaluate(document.getElementById('sub4').value);
+            var sub5 = evaluate(document.getElementById('sub5').value);
+            var sub6 = evaluate(document.getElementById('sub6').value);
             var hours1 = parseFloat(document.getElementById('hours1').value);
             var hours2 = parseFloat(document.getElementById('hours2').value);
             var hours3 = parseFloat(document.getElementById('hours3').value);
